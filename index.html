@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Búp bê Bả Bie</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- W3.CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- FONT AWESOME for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card w3-flex">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#tickets" class="w3-bar-item w3-button">Tickets</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+
+    <!-- MORE DROPDOWN -->
+    <div class="w3-dropdown-hover w3-bar-item">
+      <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#about" class="w3-bar-item w3-button">About Barbie</a>
+        <a href="#gallery" class="w3-bar-item w3-button">Gallery Fun</a>
+        <a href="#tickets" class="w3-bar-item w3-button">Special Tickets</a>
+      </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="w3-bar-item w3-right">
+      <input type="text" placeholder="Search..." class="search-input" />
+      <button class="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <h1>BÚP BÊ BẢ BIE</h1>
+  <p>✨ Glamour • Pink • Fabulous ✨</p>
+  <button class="btn">Join the Dream</button>
+</header>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery-grid">
+    <img src="./assets/img1.jpg" />
+    <img src="./assets/img2.jpg" />
+    <img src="./assets/img3.jpg" />
+    <img src="./assets/img4.jpg" />
+    <img src="./assets/img5.jpg" />
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Barbie</h2>
+  <div class="about-content">
+    <img src="./assets/img4.jpg" />
+    <div class="about-text">
+      Barbie is the ultimate icon of elegance, fashion, confidence and dreams. This event celebrates creativity, sparkle and unstoppable femininity through a magical experience filled with elegance, music and unforgettable moments. Step inside the dreamhouse and live your most fabulous life.
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section id="tickets">
+  <h2 class="section-title">Buy Your Doll</h2>
+  <div class="ticket-grid">
+    <div class="ticket-card">
+      <img src="./assets/img1.jpg" />
+      <div class="ticket-info">
+        <h3>Dreamhouse Night</h3>
+        <p>Exclusive Barbie Glam Show</p>
+        <button class="btn">Buy Doll</button>
+      </div>
+    </div>
+    <div class="ticket-card">
+      <img src="./assets/img2.jpg" />
+      <div class="ticket-info">
+        <h3>Pink Runway</h3>
+        <p>Fashion & Sparkle Event</p>
+        <button class="btn">Buy Doll</button>
+      </div>
+    </div>
+    <div class="ticket-card">
+      <img src="./assets/img3.jpg" />
+      <div class="ticket-info">
+        <h3>Glitter Party</h3>
+        <p>Night of Lights & Elegance</p>
+        <button class="btn">Buy Doll</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Us</h2>
+  <form class="contact-form" id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- CONTACT INFO WITH ICONS -->
+  <div class="contact-info">
+    <p><i class="fa fa-map-marker-alt"></i> Saigon, Vietnam</p>
+    <p><i class="fa fa-phone"></i> +84 967676767</p>
+    <p><i class="fa fa-envelope"></i> bupbebarbie@mail.com</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Barbie Dream Event • Designed with Lim Lê, Amanda & Đoàn Khánh Minh💗
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
