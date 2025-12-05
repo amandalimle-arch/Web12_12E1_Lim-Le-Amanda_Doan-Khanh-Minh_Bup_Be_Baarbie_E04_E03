@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
+  <!-- BOOTSTRAP CSS -->
+<link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Búp bê Bả Bie</title>
+<title>Búp bê Barbie</title>
 
 <!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,53 +23,93 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+<!-- jQuery + Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <body>
 
 <!-- NAVBAR -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card w3-flex">
+  <div class="w3-bar w3-pink w3-card">
+
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+    <a href="#carouselExampleIndicators" class="w3-bar-item w3-button">Gallery</a>
     <a href="#about" class="w3-bar-item w3-button">About</a>
-    <a href="#tickets" class="w3-bar-item w3-button">Tickets</a>
+
+    <a href="#tickets" class="w3-bar-item w3-button">Buy Your Doll</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 
     <!-- MORE DROPDOWN -->
-    <div class="w3-dropdown-hover w3-bar-item">
+    <div class="w3-dropdown-hover">
       <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="#about" class="w3-bar-item w3-button">About Barbie</a>
-        <a href="#gallery" class="w3-bar-item w3-button">Gallery Fun</a>
+        <a href="#carouselExampleIndicators" class="w3-bar-item w3-button">Gallery Fun</a>
         <a href="#tickets" class="w3-bar-item w3-button">Special Tickets</a>
       </div>
     </div>
 
     <!-- SEARCH BAR -->
-    <div class="w3-bar-item w3-right">
-      <input type="text" placeholder="Search..." class="search-input" />
+    <div class="w3-right w3-bar-item">
+      <input type="text" placeholder="Search..." class="search-input">
       <button class="search-btn"><i class="fa fa-search"></i></button>
     </div>
+
   </div>
 </div>
 
+
 <!-- HERO -->
 <header class="hero" id="home">
-  <h1>BÚP BÊ BẢ BIE</h1>
+  <h1>BÚP BÊ BARBIE</h1>
   <p>✨ Glamour • Pink • Fabulous ✨</p>
   <button class="btn">Join the Dream</button>
 </header>
 
 <!-- GALLERY -->
+ <!-- GALLERY -->
 <section id="gallery">
   <h2 class="section-title">Gallery</h2>
-  <div class="gallery-grid">
-    <img src="./assets/img1.jpg" />
-    <img src="./assets/img2.jpg" />
-    <img src="./assets/img3.jpg" />
-    <img src="./assets/img4.jpg" />
-    <img src="./assets/img5.jpg" />
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators (5 dots) -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./assets/img1.jpg" alt="Slide 1">
+    </div>
+  
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./assets/img3.jpg" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./assets/img4.jpg" alt="Slide 4">
+    </div>
+  
   </div>
-</section>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
 
 <!-- ABOUT -->
 <section id="about">
@@ -132,6 +177,9 @@
 </footer>
 
 <!-- JS -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
